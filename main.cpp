@@ -8,8 +8,8 @@
 #include <sstream>
 #include <vector>
 
-#include "ErrorContext.h"
-#include "ClusteringTests.h"
+#include "ErrorContext.cpp"
+#include "ClusteringTests.cpp"
 
 using std::cout;
 using std::endl;
