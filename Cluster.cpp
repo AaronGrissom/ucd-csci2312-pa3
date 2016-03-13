@@ -57,7 +57,7 @@ using namespace Clustering;
                 {
                         
                 }
-                bool Cluster::Centroid::equal(const Point &) const
+                bool Cluster::Centroid::equal(const Point &p) const
                 {
                         
                 }
@@ -72,11 +72,11 @@ using namespace Clustering;
                 
             }
         // The big three: cpy ctor, overloaded operator=, dtor
-            Cluster::Cluster(const Cluster &)
+            Cluster::Cluster(const Cluster &c)
             {
                 
             }
-            Cluster::Cluster &operator=(const Cluster &)
+            Cluster::Cluster &operator=(const Cluster &c)
             {
                 
             }
@@ -98,11 +98,11 @@ using namespace Clustering;
                 
             }
         // Add/remove: They allow calling c1.add(c2.remove(p));
-            void Cluster::add(const Point &)
+            void Cluster::add(const Point &p)
             {
                 
             }
-            const Point &Cluster::remove(const Point &)
+            const Point &Cluster::remove(const Point &p)
             {
                 
             }
@@ -123,11 +123,11 @@ using namespace Clustering;
                 
             }
         // IO - friends
-            std::ostream &Cluster::operator<<(std::ostream &, const Cluster &)
+            std::ostream &Cluster::operator<<(std::ostream &screen, const Cluster &c)
             {
                 
             }
-            std::istream &Cluster::operator>>(std::istream &, Cluster &)
+            std::istream &Cluster::operator>>(std::istream &screen, Cluster &c)
             {
                 
             }

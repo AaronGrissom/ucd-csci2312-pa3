@@ -7,11 +7,11 @@ using namespace clustering;
         
     }
 // no copying
-    KMeans::KMeans(const KMeans &) = delete
+    KMeans::KMeans(const KMeans &k) = delete
     {
         
     }
-    KMeans::KMeans &operator=(const KMeans &) = delete
+    KMeans::KMeans &operator=(const KMeans &k) = delete
     {
         
     }
