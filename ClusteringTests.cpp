@@ -11,11 +11,10 @@
 #include <map>
 #include <regex>
 
+#include "Cluster.cpp"
+#include "KMeans.cpp"
+#include "Exceptions.cpp"
 #include "ClusteringTests.h"
-#include "Point.h"
-#include "Cluster.h"
-#include "KMeans.h"
-#include "Exceptions.h"
 
 using namespace Clustering;
 using namespace Testing;
