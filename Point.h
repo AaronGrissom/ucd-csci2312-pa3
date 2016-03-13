@@ -47,7 +47,7 @@ namespace Clustering
                 // accessor
                     const Point operator*(double) const; // prevent (p1 * 2) = p2;
                     const Point operator/(double) const; // p3 = p2 / 2;
-                //array
+                // array
                     double &operator[](unsigned int index);
                     const double &operator[](unsigned int index) const;
 
