@@ -8,82 +8,94 @@
 
 #include <iostream>
 
-namespace Clustering {
+namespace Clustering 
+{
+    class OutOfBoundsEx 
+    {
+        private:
+            unsigned int __current;
+            int __rhs;
+            std::string __name;
+    
+        public:
+            OutOfBoundsEx(unsigned int c, int r);
+            unsigned int getCurrent() const;
+            int getRhs() const;
+            std::string getName() const;
 
-    class OutOfBoundsEx {
-        unsigned int __current;
-        int __rhs;
-        std::string __name;
-
-    public:
-        OutOfBoundsEx(unsigned int c, int r);
-        unsigned int getCurrent() const;
-        int getRhs() const;
-        std::string getName() const;
-
-        friend std::ostream &operator<<(std::ostream &os, const OutOfBoundsEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const OutOfBoundsEx &ex);
     };
 
 
 
-    class DimensionalityMismatchEx {
-        unsigned int __current, __rhs;
-        std::string __name;
+    class DimensionalityMismatchEx 
+    {
+        private:
+            unsigned int __current, __rhs;
+            std::string __name;
 
-    public:
-        DimensionalityMismatchEx(unsigned int c, unsigned int r);
-        unsigned int getCurrent() const;
-        unsigned int getRhs() const;
-        std::string getName() const;
+        public:
+            DimensionalityMismatchEx(unsigned int c, unsigned int r);
+            unsigned int getCurrent() const;
+            unsigned int getRhs() const;
+            std::string getName() const;
 
-        friend std::ostream &operator<<(std::ostream &os, const DimensionalityMismatchEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const DimensionalityMismatchEx &ex);
     };
 
 
 
-    class ZeroClustersEx {
-        std::string __name;
+    class ZeroClustersEx 
+    {
+        private:
+            std::string __name;
 
-    public:
-        ZeroClustersEx();
-        std::string getName() const;
+        public:
+            ZeroClustersEx();
+            std::string getName() const;
 
-        friend std::ostream &operator<<(std::ostream &os, const ZeroClustersEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const ZeroClustersEx &ex);
     };
 
 
 
-    class DataFileOpenEx {
-        std::string __name, __filename;
+    class DataFileOpenEx 
+    {
+        private:
+            std::string __name, __filename;
 
-    public:
-        DataFileOpenEx(std::string filename);
-        std::string getFilename() const;
-        std::string getName() const;
+        public:
+            DataFileOpenEx(std::string filename);
+            std::string getFilename() const;
+            std::string getName() const;
 
-        friend std::ostream &operator<<(std::ostream &os, const DataFileOpenEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const DataFileOpenEx &ex);
     };
 
 
-    class ZeroDimensionsEx {
-        std::string __name;
+    class ZeroDimensionsEx 
+    {
+        private:
+            std::string __name;
 
-    public:
-        ZeroDimensionsEx();
-        std::string getName() const;
+        public:
+            ZeroDimensionsEx();
+            std::string getName() const;
 
-        friend std::ostream &operator<<(std::ostream &os, const ZeroDimensionsEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const ZeroDimensionsEx &ex);
     };
 
 
-    class EmptyClusterEx {
+    class EmptyClusterEx 
+    {
+        private:
         std::string __name;
 
-    public:
-        EmptyClusterEx();
-        std::string getName() const;
+        public:
+            EmptyClusterEx();
+            std::string getName() const;
 
-        friend std::ostream &operator<<(std::ostream &os, const EmptyClusterEx &ex);
+            friend std::ostream &operator<<(std::ostream &os, const EmptyClusterEx &ex);
     };
 }
 
