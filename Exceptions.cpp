@@ -1,6 +1,7 @@
 # include "Exceptions.h"
 using namespace std;
 
+/*
 // OutOfBoundsEx
     OutOfBoundsEx::OutOfBoundsEx(unsigned int c, int r)
     {
@@ -99,3 +100,4 @@ using namespace std;
     {
         
     }
+*/

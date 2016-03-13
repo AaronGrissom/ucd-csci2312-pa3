@@ -7,7 +7,7 @@ using namespace Clustering;
 
 // constructors
     unsigned int Point::__idGen = 0;
-    Point::Point(unsigned int)
+    Point::Point(unsigned int num)
     {
         __id = __idGen++;
         __dim = num;
@@ -30,7 +30,7 @@ using namespace Clustering;
         for (int i = 0; i < __dim; ++i)
         __values[i]=CpydPoint.getValue(i);
     }
-    Point::Point &operator=(const Point &rPoint)
+    Point &Point::operator=(const Point &rPoint)
     {
         int i = 0;
         if (this != &rPoint)
@@ -73,7 +73,7 @@ using namespace Clustering;
         return __values[num];
     }
 // Functions
-    double Point::istanceTo(const Point &nextPoint) const
+    double Point::distanceTo(const Point &nextPoint) const
     {
         double sum;
         
@@ -156,6 +156,7 @@ using namespace Clustering;
             temp /= divider;
             return temp;
         }
+/*
     // array
         double &Point::operator[](unsigned int index)
         {
@@ -219,3 +220,4 @@ using namespace Clustering;
         {
             
         }
+*/

@@ -5,6 +5,7 @@ using namespace std;
 # include "Cluster.h"
 using namespace Clustering;
 
+/*
 // Cluster
     // Private
         void Cluster::__del()
@@ -188,3 +189,4 @@ using namespace Clustering;
                 {
                     
                 }
+*/

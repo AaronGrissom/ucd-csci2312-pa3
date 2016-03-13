@@ -78,6 +78,7 @@ bool ClusterCounts::parse_and_analyze() {
     return pass;
 }
 
+/*
 
 // - - - - - - - - - - T E S T S - - - - - - - - - -
 
@@ -3399,3 +3400,4 @@ void test_kmeans_toomanyclusters(ErrorContext &ec, unsigned int numRuns) {
 //        ec.result(pass);
     }
 }
+*/

@@ -1,6 +1,7 @@
 # include "KMeans.h"
-using namespace clustering;
+using namespace Clustering;
 
+/*
 //constructor
     KMeans::KMeans(unsigned int dim, unsigned int k, std::string filename, unsigned int maxIter)
     {
@@ -55,3 +56,4 @@ using namespace clustering;
     {
         
     }
+*/
