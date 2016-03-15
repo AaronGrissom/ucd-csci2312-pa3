@@ -78,8 +78,6 @@ bool ClusterCounts::parse_and_analyze() {
     return pass;
 }
 
-/*
-
 // - - - - - - - - - - T E S T S - - - - - - - - - -
 
 // - - - - - - - - - - P O I N T - - - - - - - - - -
@@ -151,7 +149,7 @@ void test_point_smoketest(ErrorContext &ec) {
     ec.result(pass);
 
 }
-
+/*
 // id
 void test_point_id(ErrorContext &ec, unsigned int numRuns) {
     bool pass;

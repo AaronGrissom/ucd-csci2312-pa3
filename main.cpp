@@ -14,7 +14,7 @@
 using std::cout;
 using std::endl;
 
-using namespace Testing;
+using namespace Clustering;
 
 int main() {
 
@@ -32,7 +32,7 @@ int main() {
     ErrorContext ec(cout);
 
     // point tests
-    // test_point_smoketest(ec);
+    test_point_smoketest(ec);
     // test_point_id(ec, NumIters);
     // test_point_getsetelem(ec, NumIters);
     // test_point_copying(ec, NumIters);
