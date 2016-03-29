@@ -7,6 +7,7 @@
 #define CLUSTERING_POINT_H
 
 #include <iostream>
+using namespace std;
 
 namespace Clustering 
 {
@@ -26,10 +27,10 @@ namespace Clustering
                 static void rewindIdGen();
             // constructors
                 Point(unsigned int);
-                Point(unsigned int, double *);
+                // Point(unsigned int, double *);
             // Big three: cpy ctor, overloaded operator=, dtor
                 Point(const Point &);
-                Point &operator=(const Point &);
+                // Point &operator=(const Point &);
                 ~Point();
             // Accessors & mutators
                 int getId() const;
@@ -37,37 +38,37 @@ namespace Clustering
                 void setValue(unsigned int, double);
                 double getValue(unsigned int) const;
             // Functions
-                double distanceTo(const Point &) const;
+                // double distanceTo(const Point &) const;
             // Overloaded operators
 
             // Members
                 // manipulators
-                    Point &operator*=(double); // p *= 6; p.operator*=(6);
-                    Point &operator/=(double);
+                    // Point &operator*=(double); // p *= 6; p.operator*=(6);
+                    // Point &operator/=(double);
                 // accessor
-                    const Point operator*(double) const; // prevent (p1 * 2) = p2;
-                    const Point operator/(double) const; // p3 = p2 / 2;
-                // array
-                    double &operator[](unsigned int index);
-                    const double &operator[](unsigned int index) const;
+                    // const Point operator*(double) const; // prevent (p1 * 2) = p2;
+                    // const Point operator/(double) const; // p3 = p2 / 2;
+                //array
+                    // double &operator[](unsigned int index);
+                    // const double &operator[](unsigned int index) const;
 
             // Friends
                 // manipulators
-                    friend Point &operator+=(Point &, const Point &);
-                    friend Point &operator-=(Point &, const Point &);
+                    // friend Point &operator+=(Point &, const Point &);
+                    // friend Point &operator-=(Point &, const Point &);
                 // accessor
-                    friend const Point operator+(const Point &, const Point &);
-                    friend const Point operator-(const Point &, const Point &);
+                    // friend const Point operator+(const Point &, const Point &);
+                    // friend const Point operator-(const Point &, const Point &);
                 // comparitor
-                    friend bool operator==(const Point &, const Point &);
-                    friend bool operator!=(const Point &, const Point &);
-                    friend bool operator<(const Point &, const Point &);
-                    friend bool operator>(const Point &, const Point &);
-                    friend bool operator<=(const Point &, const Point &);
-                    friend bool operator>=(const Point &, const Point &);
+                    // friend bool operator==(const Point &, const Point &);
+                    // friend bool operator!=(const Point &, const Point &);
+                    // friend bool operator<(const Point &, const Point &);
+                    // friend bool operator>(const Point &, const Point &);
+                    // friend bool operator<=(const Point &, const Point &);
+                    // friend bool operator>=(const Point &, const Point &);
                 //os
-                    friend std::ostream &operator<<(std::ostream &os, const Point &p);
-                    friend std::istream &operator>>(std::istream &is, Point &p);
+                    friend ostream &operator<<(ostream &os, Point &p);
+                    // friend std::istream &operator>>(std::istream &is, Point &p);
     };
 
 }

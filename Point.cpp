@@ -1,4 +1,3 @@
-# include <cmath>
 # include <iostream>
 using namespace std;
 
@@ -140,11 +139,14 @@ using namespace Clustering;
         {
             
         }
+*/
     //os
-        std::ostream &Point::operator<<(std::ostream &os, const Point &p)
+        ostream &operator<<(ostream &os, Point &p)
         {
-            
+            os << "Test" << endl;
+            return os;
         }
+/*
         std::istream &Point::operator>>(std::istream &is, Point &p)
         {
             
